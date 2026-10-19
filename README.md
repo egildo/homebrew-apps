@@ -11,6 +11,8 @@ brew install --cask egildo/apps/photocraft-cli
 brew install --cask egildo/apps/cadcraft-cli
 brew install --cask egildo/apps/soundcraft-cli
 brew install --cask egildo/apps/designcraft-cli
+brew install --cask egildo/apps/wordcraft-cli
+brew install --cask egildo/apps/gridcraft-cli
 ```
 
 Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involved. The private tap, `egildo/tap`, is separate and holds the formulae.
@@ -18,7 +20,7 @@ Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involve
 ## Casks
 
 - **[image-studio](https://github.com/martinkovacs/image-studio)** — image generation and editing studio for OpenRouter and local stable-diffusion.cpp (Electron). Apple Silicon only, macOS 13+.
-- **The storytold Craft CLIs**: [figcraft-cli](https://github.com/storytold/figcraft), [vectorcraft-cli](https://github.com/storytold/vectorcraft), [effectcraft-cli](https://github.com/storytold/effectcraft), [photocraft-cli](https://github.com/storytold/photocraft), [cadcraft-cli](https://github.com/storytold/cadcraft), [soundcraft-cli](https://github.com/storytold/soundcraft), [designcraft-cli](https://github.com/storytold/designcraft). Each is the app's command line and MCP server, and depends on the app's own cask in Homebrew (`homebrew/cask`), which this tap no longer carries. `tap_migrations.json` moves an app installed from this tap to Homebrew's cask. Homebrew's core has a formula named `photocraft-cli` (the headless engine alone), so install this one as `egildo/apps/photocraft-cli`.
+- **The storytold Craft CLIs**: [figcraft-cli](https://github.com/storytold/figcraft), [vectorcraft-cli](https://github.com/storytold/vectorcraft), [effectcraft-cli](https://github.com/storytold/effectcraft), [photocraft-cli](https://github.com/storytold/photocraft), [cadcraft-cli](https://github.com/storytold/cadcraft), [soundcraft-cli](https://github.com/storytold/soundcraft), [designcraft-cli](https://github.com/storytold/designcraft), [wordcraft-cli](https://github.com/storytold/wordcraft), [gridcraft-cli](https://github.com/storytold/gridcraft). Each is the app's command line and MCP server, and depends on the app's own cask in Homebrew (`homebrew/cask`), which this tap no longer carries. `tap_migrations.json` moves an app installed from this tap to Homebrew's cask. Homebrew's core has a formula named `photocraft-cli` (the headless engine alone), so install this one as `egildo/apps/photocraft-cli`.
 
 ## Where the binaries come from
 
