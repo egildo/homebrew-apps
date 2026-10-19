@@ -1,0 +1,9 @@
+{
+  "cadcraft": "homebrew/cask",
+  "designcraft": "homebrew/cask",
+  "effectcraft": "homebrew/cask",
+  "figcraft": "homebrew/cask",
+  "photocraft": "homebrew/cask",
+  "soundcraft": "homebrew/cask",
+  "vectorcraft": "homebrew/cask"
+}

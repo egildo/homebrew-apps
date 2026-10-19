@@ -1,6 +1,6 @@
 cask "figcraft-cli" do
-  version "0.6.0"
-  sha256 "119446cc8f50b719dad7a73e0356de6194aa262b6520b362dfe310ee9f05b3be"
+  version "0.7.0"
+  sha256 "5e7bea01c9f33d13d2ad803dfd10b5f0b1815e124870db09391d1c360a58e893"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/figcraft/releases/download/v#{version}/figcraft-cli-#{version}-macos-universal.zip"
@@ -13,8 +13,8 @@ cask "figcraft-cli" do
     strategy :github_latest
   end
 
-  # `mcp --attach` drives the running app, so the two are kept at one version.
-  depends_on cask: "egildo/apps/figcraft"
+  # `mcp --attach` drives the running app: bump this cask with Homebrew's app cask.
+  depends_on cask: "figcraft"
 
   binary "figcraft-cli-#{version}-macos-universal/figcraft-cli"
 end
