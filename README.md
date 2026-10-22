@@ -13,14 +13,19 @@ brew install --cask egildo/apps/soundcraft-cli
 brew install --cask egildo/apps/designcraft-cli
 brew install --cask egildo/apps/wordcraft-cli
 brew install --cask egildo/apps/gridcraft-cli
+brew install egildo/apps/punchr
 ```
 
-Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involved. The private tap, `egildo/tap`, is separate and holds the formulae.
+Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involved. The private tap, `egildo/tap`, is separate and holds the formulae, except the one below, which is public because its source is.
 
 ## Casks
 
 - **[image-studio](https://github.com/martinkovacs/image-studio)** — image generation and editing studio for OpenRouter and local stable-diffusion.cpp (Electron). Apple Silicon only, macOS 13+.
 - **The storytold Craft CLIs**: [figcraft-cli](https://github.com/storytold/figcraft), [vectorcraft-cli](https://github.com/storytold/vectorcraft), [effectcraft-cli](https://github.com/storytold/effectcraft), [photocraft-cli](https://github.com/storytold/photocraft), [cadcraft-cli](https://github.com/storytold/cadcraft), [soundcraft-cli](https://github.com/storytold/soundcraft), [designcraft-cli](https://github.com/storytold/designcraft), [wordcraft-cli](https://github.com/storytold/wordcraft), [gridcraft-cli](https://github.com/storytold/gridcraft). Each is the app's command line and MCP server, and depends on the app's own cask in Homebrew (`homebrew/cask`), which this tap no longer carries. `tap_migrations.json` moves an app installed from this tap to Homebrew's cask. Homebrew's core has a formula named `photocraft-cli` (the headless engine alone), so install this one as `egildo/apps/photocraft-cli`.
+
+## Formula
+
+- **[punchr](https://codeberg.org/egildo/punchr)** — dresses folders in Finder (tags, stamps, custom icons) by the state another program names. Egildo's own, MIT. A formula, not a cask: it builds from the tagged source on Codeberg with the Command Line Tools' `swiftc`, so the app is never quarantined and ad-hoc signing is enough. macOS 26 (Tahoe) only.
 
 ## Where the binaries come from
 
