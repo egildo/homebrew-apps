@@ -1,8 +1,8 @@
 class Punchr < Formula
   desc "Dress folders in Finder by the state another program names"
   homepage "https://codeberg.org/egildo/punchr"
-  url "https://codeberg.org/egildo/punchr/archive/v0.1.0.tar.gz"
-  sha256 "e4db1c3a5b8ec9898d3185f263d79a081f0f95f2955de8b763c76ec2dc62bd07"
+  url "https://codeberg.org/egildo/punchr/archive/v0.2.0.tar.gz"
+  sha256 "586d63b9aff700eb0c2ada7dac1649d8d8e15fdd87c30fa7a156f94ea21cac11"
   license "MIT"
 
   depends_on macos: :tahoe
