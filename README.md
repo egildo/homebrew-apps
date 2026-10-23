@@ -4,15 +4,6 @@ Egildo's tap for apps and tools that have no Homebrew cask: some publish a macOS
 
 ```bash
 brew install --cask egildo/apps/image-studio
-brew install --cask egildo/apps/figcraft-cli   # brings Homebrew's figcraft with it
-brew install --cask egildo/apps/vectorcraft-cli
-brew install --cask egildo/apps/effectcraft-cli
-brew install --cask egildo/apps/photocraft-cli
-brew install --cask egildo/apps/cadcraft-cli
-brew install --cask egildo/apps/soundcraft-cli
-brew install --cask egildo/apps/designcraft-cli
-brew install --cask egildo/apps/wordcraft-cli
-brew install --cask egildo/apps/gridcraft-cli
 brew install egildo/apps/punchr
 ```
 
@@ -21,15 +12,13 @@ Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involve
 ## Casks
 
 - **[image-studio](https://github.com/martinkovacs/image-studio)** — image generation and editing studio for OpenRouter and local stable-diffusion.cpp (Electron). Apple Silicon only, macOS 13+.
-- **The storytold Craft CLIs**: [figcraft-cli](https://github.com/storytold/figcraft), [vectorcraft-cli](https://github.com/storytold/vectorcraft), [effectcraft-cli](https://github.com/storytold/effectcraft), [photocraft-cli](https://github.com/storytold/photocraft), [cadcraft-cli](https://github.com/storytold/cadcraft), [soundcraft-cli](https://github.com/storytold/soundcraft), [designcraft-cli](https://github.com/storytold/designcraft), [wordcraft-cli](https://github.com/storytold/wordcraft), [gridcraft-cli](https://github.com/storytold/gridcraft). Each is the app's command line and MCP server, and depends on the app's own cask in Homebrew (`homebrew/cask`), which this tap no longer carries. `tap_migrations.json` moves an app installed from this tap to Homebrew's cask. Homebrew's core has a formula named `photocraft-cli` (the headless engine alone), so install this one as `egildo/apps/photocraft-cli`.
+- **The storytold Craft CLIs** moved to their own tap, [egildo/artcraft](https://github.com/egildo/homebrew-artcraft). `tap_migrations.json` sends the ones installed from here there.
 
 ## Formula
 
 - **[punchr](https://codeberg.org/egildo/punchr)** — dresses folders in Finder (tags, stamps, custom icons) by the state another program names. Egildo's own, MIT. A formula, not a cask: it builds from the tagged source on Codeberg with the Command Line Tools' `swiftc`, so the app is never quarantined and ad-hoc signing is enough. macOS 26 (Tahoe) only.
 
 ## Where the binaries come from
-
-**The `*craft-cli` casks**: upstream's own release assets (`<app>-cli-<version>-macos-universal.zip`), notarised by their developer (storytold), Apache-2.0 (the archives also carry an MIT licence). The casks point straight at them; nothing is rebuilt or rehosted. The `sha256` values are the ones in upstream's `SHA256SUMS.txt`.
 
 **image-studio**: upstream does not publish a macOS build (its CI builds Linux and Windows only), so its cask points at a release of *this* repository, tagged `<cask>-v<version>`. The build is the project's own, unmodified:
 
@@ -53,4 +42,4 @@ The upstream repository carries no licence. These builds are a convenience for t
 
 ## Releasing
 
-For a `*craft-cli`, bump `version` when Homebrew's app cask moves, and copy the `sha256` from upstream's `SHA256SUMS.txt`. For image-studio, bump `version` and `sha256`, rebuild, attach the dmg to a release tagged `<cask>-v<version>`, then `brew style` and `brew audit --cask` before committing.
+For image-studio, bump `version` and `sha256`, rebuild, attach the dmg to a release tagged `<cask>-v<version>`, then `brew style` and `brew audit --cask` before committing.

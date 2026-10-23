@@ -1,9 +1,11 @@
 {
-  "cadcraft": "homebrew/cask",
-  "designcraft": "homebrew/cask",
-  "effectcraft": "homebrew/cask",
-  "figcraft": "homebrew/cask",
-  "photocraft": "homebrew/cask",
-  "soundcraft": "homebrew/cask",
-  "vectorcraft": "homebrew/cask"
+  "cadcraft-cli": "egildo/artcraft",
+  "designcraft-cli": "egildo/artcraft",
+  "effectcraft-cli": "egildo/artcraft",
+  "figcraft-cli": "egildo/artcraft",
+  "gridcraft-cli": "egildo/artcraft",
+  "photocraft-cli": "egildo/artcraft",
+  "soundcraft-cli": "egildo/artcraft",
+  "vectorcraft-cli": "egildo/artcraft",
+  "wordcraft-cli": "egildo/artcraft"
 }
