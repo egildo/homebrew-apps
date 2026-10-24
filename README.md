@@ -19,7 +19,8 @@ Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involve
 
 | version | source commit | sha256 |
 |---|---|---|
-| 0.1.0 | see the release notes | see the cask |
+| 0.1.1 | barium-v0.1.1 (999e3dc) | 284073c8e4c9… |
+| 0.1.0 | barium-v0.1.0 (b53bdb1) | 4893e4cf1201… |
 
 ## Moved or removed
 
