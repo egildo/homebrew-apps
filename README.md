@@ -11,7 +11,7 @@ Public, so `brew tap egildo/apps` works over plain HTTPS and no token is involve
 
 ## Formula
 
-- **[punchr](https://codeberg.org/egildo/punchr)** — dresses folders in Finder (tags, stamps, custom icons) by the state another program names. Egildo's own, MIT. A formula, not a cask: it builds from the tagged source on Codeberg with the Command Line Tools' `swiftc`, so the app is never quarantined and ad-hoc signing is enough. macOS 26 (Tahoe) only.
+- **[punchr](https://codeberg.org/egildo/punchr)** — dresses folders and files in Finder (tags, stamps, custom icons, comments) by the state another program names, and gives Finder's sidebar shelves of aliases with their own symbols. Egildo's own, MIT. A formula, not a cask: it builds from the tagged source on Codeberg with the Command Line Tools' `swiftc`, so the app is never quarantined and ad-hoc signing is enough. macOS 26 (Tahoe) only.
 
 ## Cask
 
