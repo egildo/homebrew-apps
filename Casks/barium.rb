@@ -1,8 +1,8 @@
 cask "barium" do
   arch arm: "arm64"
 
-  version "0.1.1"
-  sha256 "284073c8e4c9641d1f8cbcba217487bf736ca37efef1d9acfbad6e5e6768c93c"
+  version "0.2.0"
+  sha256 "9a904b63aaaf318c2f42dd3e92c588886581938eb094337a85dcc05290919d60"
 
   url "https://github.com/egildo/homebrew-apps/releases/download/barium-v#{version}/barium-#{version}-#{arch}.dmg"
   name "Barium"
